@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+body{
+  font-family: 'Manrope', sans-serif !important;
+  background-color: black !important;
+}
+.home-page-header{
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-image{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1524847533688-145dc99a5068?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+  background-size: cover;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-page-header-text{
+  position: absolute;
+  top: 32%;
+  padding-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bg-image h2{
+  color: white;
+  font-weight: 600;
+}
+.bg-image p{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-image span::before{
+  content: '';
+  animation: animate alternate 20s infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-content{
+  
+}
+
+.home-page-plant-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.succulents{
+  height: 300px;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1543747050-1db50a971c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+}
+
+article h2{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  padding: 20px;
+ 
+}
+
+article p{
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+}
+
+
+
+#plant-image-1{
+  background-image: url(https://images.unsplash.com/photo-1531797611996-666aa1f3df08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjkyfHxpbmRvb3IlMjBwbGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 70%;
+}
+
+#plant-image-2{
+  background-image: url(https://images.unsplash.com/photo-1527849172727-968e0a43c6a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDMxfHxpbmRvb3IlMjBwbGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: right;
+  /* width: 123vw; */
+  height: 400px;
+  margin-top: 50px;
+  /* margin-left: 20px; */
+  margin-bottom: 50px;
+}
+
+#plant-image-2 h2{
+  text-align: left;
+}
+
+#plant-image-2 p{
+  text-align: left;
+}
+
+.img-wrapper{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.img-wrapper-2{
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  article{
+    display: flex;
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+  #plant-image-2{
+    height: 530px;
+  }
+  
+}
+
+@keyframes animate{
+  0%{
+    content: 'Ferns';
+  }
+
+  25%{
+    content: 
+    'Succulents';
+  }
+
+  50%{
+    content: 'Pothos';
+  }
+
+  75%{
+    content: 'Spider Plants';
+  }
+
+  100%{
+    content: 'Cacti';
   }
 }
+/* .bg-image img{
+ width: 100%;
+ height: 100%;
+  object-fit: cover;
+} */
