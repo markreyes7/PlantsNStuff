@@ -4,6 +4,10 @@ body{
   font-family: 'Manrope', sans-serif !important;
   background-color: black !important;
 }
+a{
+  text-decoration: none !important;
+  color: white !important;
+}
 .home-page-header{
   width: 100vw;
   height: 100vh;
@@ -34,6 +38,8 @@ body{
 
 .bg-image span::before{
   content: '';
+ 
+  text-decoration: underline;
   animation: animate alternate 20s infinite;
 }
 
@@ -48,11 +54,53 @@ body{
 }
 
 .succulents{
+  display: flex;
   height: 300px;
   width: 100%;
   background-image: url(https://images.unsplash.com/photo-1543747050-1db50a971c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
   background-size: cover;
   background-position: center;
+  justify-content: center;
+}
+
+.ferns{
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1531156992292-d36397ee9184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHBsYW50fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+
+.pothos{
+  position: relative;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1572691841508-a0de2b6d5326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+
+.pothos::after{
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  box-shadow: inset 0px 0px 150px black;
+}
+
+.title-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-wrapper h3{
+  color: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 15px;
 }
 
 article{
@@ -81,7 +129,7 @@ article p{
   background-image: url(https://images.unsplash.com/photo-1531797611996-666aa1f3df08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjkyfHxpbmRvb3IlMjBwbGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 400px;
   width: 70%;
 }
 
@@ -102,6 +150,7 @@ article p{
 
 #plant-image-2 p{
   text-align: left;
+  padding-left: 10px;
 }
 
 .img-wrapper{
@@ -116,6 +165,23 @@ article p{
 .img-wrapper-2{
   height: 100%;
   width: 100%;
+}
+
+.box-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.box{
+  border-radius: 20px;
+  padding: 7px;
+  border: 1px solid white;
+}
+
+.box p{
+  padding: 9px;
+  text-align: center;
 }
 
 @media screen and (min-width: 800px) {
