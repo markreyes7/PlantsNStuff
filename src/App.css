@@ -2,12 +2,31 @@
 
 body{
   font-family: 'Manrope', sans-serif !important;
-  background-color: black !important;
+  background-color: #212529 !important;
 }
 a{
   text-decoration: none !important;
   color: white !important;
 }
+
+table{
+  border: solid 0.0625rem rgb(255, 249, 249);
+  color: white;
+}
+
+tr:nth-child(odd){
+  padding: 15px;
+  background-color: rgb(14, 47, 44);
+}
+td{
+  border-right: 1px solid white;
+}
+
+h5{
+  color: white;
+}
+
+
 .home-page-header{
   width: 100vw;
   height: 100vh;
@@ -67,11 +86,14 @@ a{
   display: flex;
   height: 300px;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1531156992292-d36397ee9184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fHBsYW50fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://images.unsplash.com/photo-1597896731503-dcd364219a15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80);
   background-size: cover;
   background-position: center;
   justify-content: center;
 }
+
+
+
 
 .pothos{
   position: relative;
@@ -183,6 +205,25 @@ article p{
   padding: 9px;
   text-align: center;
 }
+
+.h4-wrapper{
+  padding-top: 1.7rem;
+  padding-left: 0.8rem;
+  padding-bottom: 0.6rem;
+}
+
+.plant-description{
+  display: flex;
+  flex-direction: column;
+  color: darkseagreen;
+}
+
+.plant-p{
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+
 
 @media screen and (min-width: 800px) {
   article{
